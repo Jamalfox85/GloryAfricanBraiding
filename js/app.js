@@ -8,6 +8,8 @@ const two = document.getElementById('two');
 const three = document.getElementById('three');
 const four = document.getElementById('four');
 const slides = [one, two, three, four];
+const mobilenav = document.getElementById('mobilenav');
+const nav = document.getElementById('nav');
 var slide = 0;
 
 
@@ -48,3 +50,8 @@ const slideLeft = () => {
 }
 LEFT.addEventListener('click', slideLeft);
 RIGHT.addEventListener('click', slideRight);
+
+mobilenav.addEventListener('click', function() {
+    nav.classList.toggle('active');
+    mobilenav.classList.toggle('active');
+})
